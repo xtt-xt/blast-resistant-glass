@@ -1,0 +1,28 @@
+{
+    "groups": [
+        {
+            "group_name": "防爆玻璃",
+            "icon": "reinforced_glass:blast_glass",
+            "list": [
+                "reinforced_glass:blast_glass",
+                "reinforced_glass:black_blast_glass",
+                "reinforced_glass:blue_blast_glass",
+                "reinforced_glass:brown_blast_glass",
+                "reinforced_glass:cyan_blast_glass",
+                "reinforced_glass:gray_blast_glass",
+                "reinforced_glass:green_blast_glass",
+                "reinforced_glass:light_blue_blast_glass",
+                "reinforced_glass:lime_blast_glass",
+                "reinforced_glass:magenta_blast_glass",
+                "reinforced_glass:orange_blast_glass",
+                "reinforced_glass:pink_blast_glass",
+                "reinforced_glass:purple_blast_glass",
+                "reinforced_glass:red_blast_glass",
+                "reinforced_glass:silver_blast_glass",
+                "reinforced_glass:tinted_blast_glass",
+                "reinforced_glass:white_blast_glass",
+                "reinforced_glass:yellow_blast_glass"
+            ]
+        }
+    ]
+}

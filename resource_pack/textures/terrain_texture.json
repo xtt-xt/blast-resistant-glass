@@ -1,0 +1,60 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "reinforced_glass:glass": {
+            "textures": "textures/blocks/glass.png"
+        },
+        "reinforced_glass:glass_black": {
+            "textures": "textures/blocks/glass_black.png"
+        },
+        "reinforced_glass:glass_blue": {
+            "textures": "textures/blocks/glass_blue.png"
+        },
+        "reinforced_glass:glass_brown": {
+            "textures": "textures/blocks/glass_brown.png"
+        },
+        "reinforced_glass:glass_cyan": {
+            "textures": "textures/blocks/glass_cyan.png"
+        },
+        "reinforced_glass:glass_gray": {
+            "textures": "textures/blocks/glass_gray.png"
+        },
+        "reinforced_glass:glass_green": {
+            "textures": "textures/blocks/glass_green.png"
+        },
+        "reinforced_glass:glass_light_blue": {
+            "textures": "textures/blocks/glass_light_blue.png"
+        },
+        "reinforced_glass:glass_lime": {
+            "textures": "textures/blocks/glass_lime.png"
+        },
+        "reinforced_glass:glass_magenta": {
+            "textures": "textures/blocks/glass_magenta.png"
+        },
+        "reinforced_glass:glass_orange": {
+            "textures": "textures/blocks/glass_orange.png"
+        },
+        "reinforced_glass:glass_pink": {
+            "textures": "textures/blocks/glass_pink.png"
+        },
+        "reinforced_glass:glass_purple": {
+            "textures": "textures/blocks/glass_purple.png"
+        },
+        "reinforced_glass:glass_red": {
+            "textures": "textures/blocks/glass_red.png"
+        },
+        "reinforced_glass:glass_silver": {
+            "textures": "textures/blocks/glass_silver.png"
+        },
+        "reinforced_glass:glass_white": {
+            "textures": "textures/blocks/glass_white.png"
+        },
+        "reinforced_glass:glass_yellow": {
+            "textures": "textures/blocks/glass_yellow.png"
+        },
+        "reinforced_glass:tinted_glass": {
+            "textures": "textures/blocks/tinted_glass.png"
+        }
+    },
+    "texture_name": "atlas.terrain"
+}

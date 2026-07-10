@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+
+from mod.common.mod import Mod # type: ignore
+
+
+@Mod.Binding(name="Script_NeteaseModY4HZxOgU", version="0.0.1")
+class Script_NeteaseModY4HZxOgU(object):
+
+    def __init__(self):
+        pass
+
+    @Mod.InitServer()
+    def Script_NeteaseModY4HZxOgUServerInit(self):
+        pass
+
+    @Mod.DestroyServer()
+    def Script_NeteaseModY4HZxOgUServerDestroy(self):
+        pass
+
+    @Mod.InitClient()
+    def Script_NeteaseModY4HZxOgUClientInit(self):
+        pass
+
+    @Mod.DestroyClient()
+    def Script_NeteaseModY4HZxOgUClientDestroy(self):
+        pass

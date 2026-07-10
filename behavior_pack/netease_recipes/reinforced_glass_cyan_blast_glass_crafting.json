@@ -1,0 +1,37 @@
+﻿{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "reinforced_glass:cyan_blast_glass_crafting"
+        },
+        "key": {
+            "E": {
+                "data": 0,
+                "item": "minecraft:cyan_dye"
+            },
+            "I": {
+                "data": 0,
+                "item": "reinforced_glass:blast_glass"
+            }
+        },
+        "pattern": [
+            "III",
+            "IEI",
+            "III"
+        ],
+        "result": {
+            "count": 8,
+            "data": 0,
+            "item": "reinforced_glass:cyan_blast_glass"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "unlock": [
+            {
+                "data": 0,
+                "item": "reinforced_glass:blast_glass"
+            }
+        ]
+    }
+}
