@@ -75,5 +75,77 @@
     "reinforced_glass:yellow_blast_glass": {
         "sound": "glass",
         "textures": "reinforced_glass:glass_yellow"
+    },
+    "reinforced_glass:black_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_black"
+    },
+    "reinforced_glass:blue_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_blue"
+    },
+    "reinforced_glass:brown_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_brown"
+    },
+    "reinforced_glass:cyan_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_cyan"
+    },
+    "reinforced_glass:gray_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_gray"
+    },
+    "reinforced_glass:green_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_green"
+    },
+    "reinforced_glass:light_blue_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_light_blue"
+    },
+    "reinforced_glass:lime_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_lime"
+    },
+    "reinforced_glass:magenta_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_magenta"
+    },
+    "reinforced_glass:orange_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_orange"
+    },
+    "reinforced_glass:pink_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_pink"
+    },
+    "reinforced_glass:purple_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_purple"
+    },
+    "reinforced_glass:red_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_red"
+    },
+    "reinforced_glass:silver_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_silver"
+    },
+    "reinforced_glass:tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass"
+    },
+    "reinforced_glass:tinted_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:tinted_glass"
+    },
+    "reinforced_glass:white_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_white"
+    },
+    "reinforced_glass:yellow_tempered_glass": {
+        "sound": "glass",
+        "textures": "reinforced_glass:glass_yellow"
     }
 }

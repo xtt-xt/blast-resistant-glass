@@ -1,0 +1,28 @@
+{
+    "groups": [
+        {
+            "group_name": "钢化玻璃",
+            "icon": "reinforced_glass:tempered_glass",
+            "list": [
+                "reinforced_glass:tempered_glass",
+                "reinforced_glass:black_tempered_glass",
+                "reinforced_glass:blue_tempered_glass",
+                "reinforced_glass:brown_tempered_glass",
+                "reinforced_glass:cyan_tempered_glass",
+                "reinforced_glass:gray_tempered_glass",
+                "reinforced_glass:green_tempered_glass",
+                "reinforced_glass:light_blue_tempered_glass",
+                "reinforced_glass:lime_tempered_glass",
+                "reinforced_glass:magenta_tempered_glass",
+                "reinforced_glass:orange_tempered_glass",
+                "reinforced_glass:pink_tempered_glass",
+                "reinforced_glass:purple_tempered_glass",
+                "reinforced_glass:red_tempered_glass",
+                "reinforced_glass:silver_tempered_glass",
+                "reinforced_glass:tinted_tempered_glass",
+                "reinforced_glass:white_tempered_glass",
+                "reinforced_glass:yellow_tempered_glass"
+            ]
+        }
+    ]
+}

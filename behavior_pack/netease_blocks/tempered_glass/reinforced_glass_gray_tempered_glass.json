@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": {
+                "value": 35.0
+            },
+            "minecraft:explosion_resistance": {
+                "value": 1200.0
+            },
+            "netease:render_layer": {
+                "value": "blend"
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "netease:tier": {
+                "destroy_special": true,
+                "digger": "pickaxe",
+                "level": 3
+            }
+        },
+        "description": {
+            "category": "construction",
+            "identifier": "reinforced_glass:gray_tempered_glass"
+        }
+    }
+}

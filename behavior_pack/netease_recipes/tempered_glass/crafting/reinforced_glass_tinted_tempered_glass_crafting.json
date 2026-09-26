@@ -1,0 +1,41 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "reinforced_glass:tinted_tempered_glass_crafting"
+        },
+        "key": {
+            "C": {
+                "data": 0,
+                "item": "reinforced_glass:tempered_glass"
+            },
+            "E": {
+                "data": 0,
+                "item": "minecraft:amethyst_shard"
+            }
+        },
+        "pattern": [
+            " E ",
+            "ECE",
+            " E "
+        ],
+        "result": {
+            "count": 2,
+            "data": 0,
+            "item": "reinforced_glass:tinted_tempered_glass"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "unlock": [
+            {
+                "data": 0,
+                "item": "minecraft:amethyst_shard"
+            },
+            {
+                "data": 0,
+                "item": "reinforced_glass:tempered_glass"
+            }
+        ]
+    }
+}

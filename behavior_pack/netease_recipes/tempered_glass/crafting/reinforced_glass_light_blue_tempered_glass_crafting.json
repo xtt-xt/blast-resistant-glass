@@ -1,28 +1,28 @@
-﻿{
+{
     "format_version": "1.20.10",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "reinforced_glass:gray_blast_glass_crafting"
+            "identifier": "reinforced_glass:light_blue_tempered_glass_crafting"
         },
         "key": {
-            "E": {
-                "data": 0,
-                "item": "minecraft:gray_dye"
-            },
             "I": {
                 "data": 0,
-                "item": "reinforced_glass:blast_glass"
+                "item": "reinforced_glass:light_blue_blast_glass"
+            },
+            "O": {
+                "data": 0,
+                "item": "minecraft:obsidian"
             }
         },
         "pattern": [
             "III",
-            "IEI",
+            "IOI",
             "III"
         ],
         "result": {
             "count": 8,
             "data": 0,
-            "item": "reinforced_glass:gray_blast_glass"
+            "item": "reinforced_glass:light_blue_tempered_glass"
         },
         "tags": [
             "crafting_table"
@@ -30,7 +30,11 @@
         "unlock": [
             {
                 "data": 0,
-                "item": "reinforced_glass:blast_glass"
+                "item": "reinforced_glass:light_blue_blast_glass"
+            },
+            {
+                "data": 0,
+                "item": "minecraft:obsidian"
             }
         ]
     }
