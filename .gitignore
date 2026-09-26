@@ -5,6 +5,8 @@ studio.json
 work.mcscfg
 world_resource_packs.json
 world_behavior_packs.json
+world_icon.jpeg
+.mcs/
 
 # 编辑器临时文件
 *.tmp
