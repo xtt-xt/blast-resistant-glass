@@ -6,7 +6,7 @@
                 "value": 0
             },
             "minecraft:destroy_time": {
-                "value": 35.0
+                "value": 0.3
             },
             "minecraft:explosion_resistance": {
                 "value": 1200.0
@@ -16,11 +16,6 @@
             },
             "netease:solid": {
                 "value": false
-            },
-            "netease:tier": {
-                "destroy_special": true,
-                "digger": "pickaxe",
-                "level": 3
             }
         },
         "description": {
