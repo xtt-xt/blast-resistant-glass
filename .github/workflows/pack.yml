@@ -13,6 +13,8 @@ permissions:
 
 env:
   MOD_NAME: 防爆玻璃
+  # 网易行为包强制要求存在的目录（相对行为包根目录）
+  REQUIRED_BE_DIRS: entities
 
 jobs:
   pack:
@@ -34,6 +36,14 @@ jobs:
           echo "be=$BE" >> "$GITHUB_OUTPUT"
           echo "re=$RE" >> "$GITHUB_OUTPUT"
           echo "行为包: $BE / 资源包: $RE"
+
+          for d in ${REQUIRED_BE_DIRS}; do
+            if [ -d "${BE}${d}" ]; then
+              echo "OK: 已发现强制目录 ${BE}${d}"
+            else
+              echo "::notice::源码缺少强制目录 ${BE}${d}，打包时会自动补建空目录"
+            fi
+          done
 
       - name: 校验 JSON 与 UUID 唯一性
         run: |
@@ -127,6 +137,11 @@ jobs:
           cp -a "${BE%/}/." stage/behavior_pack/
           cp -a "${RE%/}/." stage/resource_pack/
 
+          # 网易行为包强制目录：不存在就补建空目录
+          for d in ${REQUIRED_BE_DIRS}; do
+            mkdir -p "stage/behavior_pack/${d}"
+          done
+
           # 剔除开发环境残留与垃圾文件
           find stage -type d \( -name '__pycache__' -o -name '.mcs*' \) -prune -exec rm -rf {} + || true
           find stage -type f \( -name '*.py[cod]' -o -name '.DS_Store' -o -name 'Thumbs.db' \
@@ -134,6 +149,19 @@ jobs:
             -o -name 'world_*_packs.json' \) -delete
 
           (cd stage && zip -qr "../out/${NAME}_${V}.zip" behavior_pack resource_pack)
+
+          echo '--- 强制目录检查（zip 内）---'
+          unzip -Z1 "out/${NAME}_${V}.zip" > /tmp/zip_list.txt
+          FAILED=0
+          for d in ${REQUIRED_BE_DIRS}; do
+            if grep -qx "behavior_pack/${d}/" /tmp/zip_list.txt; then
+              echo "OK: behavior_pack/${d}/"
+            else
+              echo "::error::产物缺少强制目录 behavior_pack/${d}/"
+              FAILED=1
+            fi
+          done
+          [ "$FAILED" -eq 0 ] || exit 1
 
           (cd out && sha256sum ./* > SHA256SUMS.txt)
           ls -l out
