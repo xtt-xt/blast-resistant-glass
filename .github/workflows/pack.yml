@@ -99,15 +99,26 @@ jobs:
           print(f"OK: JSON 全部合法，共 {len(uuids)} 个 UUID，无重复")
           PY
 
-      - name: Python 语法检查
+      - name: Python 语法检查（按网易运行环境 Python2.7）
         run: |
           set -e
           mapfile -t PYFILES < <(find "${{ steps.dirs.outputs.be }}" -type f -name '*.py')
           if [ "${#PYFILES[@]}" -eq 0 ]; then
             echo "未发现 Python 文件，跳过"
           else
-            python3 -m compileall -q "${PYFILES[@]}"
-            echo "OK: 已检查 ${#PYFILES[@]} 个 Python 文件"
+            # 网易 ModSDK 的脚本运行环境是 Python2.7，必须用 py2 解释器校验；
+            # 用 python3 的 compileall 会把合法的 py2 写法（如 print "x"）误判成 SyntaxError。
+            # 容器内以 root 运行，生成的 *.pyc 会被打包步骤统一剔除。
+            IMG=python:2.7-slim
+            docker pull -q "$IMG" >/dev/null 2>&1 || IMG=python:2.7.18-slim-buster
+            docker pull -q "$IMG" >/dev/null 2>&1 || IMG=python:2.7.18
+            if ! docker pull -q "$IMG" >/dev/null 2>&1; then
+              echo "::error::无法获取 Python2.7 镜像（python:2.7-slim / 2.7.18-slim-buster / 2.7.18）"
+              exit 1
+            fi
+            echo "使用镜像: $IMG"
+            docker run --rm -v "$PWD":/w -w /w "$IMG" python -m compileall -q "${PYFILES[@]}"
+            echo "OK: 已按 Python2.7 检查 ${#PYFILES[@]} 个 Python 文件"
           fi
 
       - name: 计算版本标识
