@@ -24,7 +24,12 @@ class Script_NeteaseModY4HZxOgU(object):
 
     @Mod.InitClient()
     def Script_NeteaseModY4HZxOgUClientInit(self):
-        pass
+        import mod.client.extraClientApi as clientApi
+        clientApi.RegisterSystem(
+            "ReinforcedGlassClient",
+            "ReinforcedGlassClientSystem",
+            "Script_NeteaseModY4HZxOgU.modClient.ReinforcedGlassClientSystem"
+        )
 
     @Mod.DestroyClient()
     def Script_NeteaseModY4HZxOgUClientDestroy(self):

@@ -1,0 +1,10 @@
+{
+	"format_version": "0.0.1",
+	"name": "reinforced_glass_get",
+	"description": "查询防爆玻璃模组的服务端设置项（需管理员）：/reinforced_glass_get <键> [目标]。键形如 reinforced_glass.server.<中间卡片id>.<设置项>",
+	"permission_level": "game_directors",
+	"args": [
+		{"name": "键", "type": "str", "default": ""},
+		{"name": "目标", "type": "target", "default": "@s"}
+	]
+}

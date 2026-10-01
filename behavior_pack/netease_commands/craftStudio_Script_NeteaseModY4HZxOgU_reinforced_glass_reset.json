@@ -1,0 +1,10 @@
+{
+	"format_version": "0.0.1",
+	"name": "reinforced_glass_reset",
+	"description": "重置防爆玻璃模组的服务端设置项（需管理员）：/reinforced_glass_reset <键或分组前缀> [目标]。前缀支持 server / server.<中间卡片id>",
+	"permission_level": "game_directors",
+	"args": [
+		{"name": "键", "type": "str", "default": ""},
+		{"name": "目标", "type": "target", "default": "@s"}
+	]
+}

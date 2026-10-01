@@ -1,0 +1,10 @@
+{
+	"format_version": "0.0.1",
+	"name": "reinforced_glass_list",
+	"description": "列出防爆玻璃模组的全部服务端设置键及当前值（需管理员）：/reinforced_glass_list [页码] [目标]",
+	"permission_level": "game_directors",
+	"args": [
+		{"name": "页码", "type": "int", "default": 1},
+		{"name": "目标", "type": "target", "default": "@s"}
+	]
+}
