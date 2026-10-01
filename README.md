@@ -82,7 +82,6 @@
 ## 📄 开源协议
 
 本项目采用 [GNU General Public License v3.0](LICENSE) 协议开源。
-附加条款：禁止将本体及其修改版本以任意收费形式出售
 
 ***
 
